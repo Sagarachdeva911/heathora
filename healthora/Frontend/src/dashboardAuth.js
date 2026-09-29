@@ -31,7 +31,7 @@ onAuthStateChanged(auth, async (user) => {
 
 const response =
     await fetch(
-        `${window.location.protocol}//${window.location.hostname}:5000/api/users/profile`,
+        `/api/users/profile`,
         {
             method: "GET",
 
@@ -310,7 +310,7 @@ if (editProfileButton) {
 
                 const response =
                     await fetch(
-                        `${window.location.protocol}//${window.location.hostname}:5000/api/users/profile`,
+                        `/api/users/profile`,
                         {
                             method: "PUT",
 

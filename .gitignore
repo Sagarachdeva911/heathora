@@ -7,3 +7,6 @@ dist/
 __MACOSX/
 .DS_Store
 healthora/backend/config/serviceAccountKey.json
+
+# Local Netlify folder
+.netlify

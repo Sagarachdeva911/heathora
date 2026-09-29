@@ -1,0 +1,12 @@
+[build]
+  command = "npm run build"
+  publish = "healthora/Frontend/dist"
+
+[functions]
+  directory = "netlify/functions"
+
+# Client-side routes handled by the React app (login, signup, avatar setup).
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
