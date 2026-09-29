@@ -1,5 +1,5 @@
 const API_URL =
-    "http://localhost:5000/api/podcasts";
+    "/api/podcasts";
 
 
 const params =
@@ -332,7 +332,7 @@ async function loadPodcast() {
 
 
                     podcastVideo.src =
-                        `http://localhost:5000/videos/${videoFile}`;
+                        `/videos/${videoFile}`;
 
 
                     podcastVideo.style.display =

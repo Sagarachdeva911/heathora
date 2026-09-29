@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api/articles";
+const API_URL = "/api/articles";
 
 
 const params = new URLSearchParams(
