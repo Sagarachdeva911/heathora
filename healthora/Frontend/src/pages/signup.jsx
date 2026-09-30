@@ -59,8 +59,7 @@ const Signup = () => {
     const token =
       await user.getIdToken();
 
-    const API_URL =
-      `${window.location.protocol}//${window.location.hostname}:5000`;
+    const API_URL = "";
 
     const response =
       await fetch(
