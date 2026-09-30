@@ -2,20 +2,26 @@
   "name": "healthora-frontend",
   "private": true,
   "version": "1.0.0",
-  "type": "module","scripts": {
-  "dev": "vite",
-  "build": "vite build healthora/Frontend"
-},
+  "type": "module",
+  "scripts": {
+    "dev": "vite healthora/Frontend",
+    "build": "vite build healthora/Frontend"
+  },
   "dependencies": {
+    "@netlify/database": "^2.0.1",
+    "drizzle-orm": "^1.0.0-beta.22",
     "firebase": "^12.19.0",
+    "jose": "^6.2.12",
     "lucide-react": "^1.48.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.9.1"
   },
   "devDependencies": {
+    "@netlify/functions": "^6.0.0",
     "@tailwindcss/vite": "^4.1.13",
     "@vitejs/plugin-react": "^5.0.4",
+    "drizzle-kit": "^1.0.0-beta.22",
     "vite": "^8.3.0"
   }
 }

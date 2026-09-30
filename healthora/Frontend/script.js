@@ -2079,7 +2079,7 @@ async function loadProfileFromMongoDB() {
 
         const response =
             await fetch(
-                `${window.location.protocol}//${window.location.hostname}:5000/api/users/profile`,
+                `/api/users/profile`,
                 {
                     method: "GET",
 
@@ -2198,7 +2198,7 @@ async function updateMongoProfile() {
 
         const response =
             await fetch(
-                `${window.location.protocol}//${window.location.hostname}:5000/api/users/profile`,
+                `/api/users/profile`,
                 {
                     method: "PUT",
 
@@ -2351,7 +2351,7 @@ document.addEventListener(
 
             const response =
                 await fetch(
-                    `${window.location.protocol}//${window.location.hostname}:5000/api/users/profile`,
+                    `/api/users/profile`,
                     {
                         method: "PUT",
 
@@ -2590,7 +2590,7 @@ document.addEventListener(
 
             const response =
                 await fetch(
-                    `${window.location.protocol}//${window.location.hostname}:5000/api/users/profile`,
+                    `/api/users/profile`,
                     {
                         method: "PUT",
 
@@ -5610,8 +5610,7 @@ document.addEventListener("click", function(event) {
    LOAD ARTICLES FROM BACKEND
 ========================================================= */
 
-const API_BASE_URL =
-    `${window.location.protocol}//${window.location.hostname}:5000`;
+const API_BASE_URL = "";
 
 async function loadArticlesFromBackend() {
 
